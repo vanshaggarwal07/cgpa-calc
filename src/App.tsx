@@ -1,6 +1,7 @@
 import './App.css';
 import CGPACalculator from './appComponents/cgpaCalc';
 import DotPattern from './components/ui/dot-pattern';
+import { Analytics } from '@vercel/analytics/react';
 
 function App() {
 	return (
@@ -9,6 +10,7 @@ function App() {
 				<CGPACalculator />
 			</div>
 			<DotPattern className="fixed inset-0 -z-10 opacity-30" />
+			<Analytics />
 		</div>
 	);
 }
